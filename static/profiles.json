@@ -1,0 +1,19 @@
+{
+  "profiles": [
+    {
+      "name": "Twitter",
+      "username": "johndoe",
+      "url": "https://twitter.com/johndoe"
+    },
+    {
+      "name": "GitHub",
+      "username": "johndoe",
+      "url": "https://github.com/johndoe"
+    },
+    {
+      "name": "LinkedIn",
+      "username": "johndoe",
+      "url": "https://www.linkedin.com/in/johndoe/"
+    }
+  ]
+}

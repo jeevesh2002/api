@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Python",
+    "level": "Expert"
+  },
+  {
+    "name": "Java",
+    "level": "Advanced"
+  },
+  {
+    "name": "JavaScript",
+    "level": "Intermediate"
+  },
+  {
+    "name": "C++",
+    "level": "Intermediate"
+  },
+  {
+    "name": "SQL",
+    "level": "Intermediate"
+  }
+]

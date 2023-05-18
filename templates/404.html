@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Not Found</title>
+    <style>
+      body {
+        background-color: #000;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+      }
+      h1 {
+        font-size: 5em;
+        margin-top: 2em;
+      }
+      p {
+        font-size: 2em;
+        margin-top: 1em;
+      }
+      img {
+        margin-top: 2em;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>404</h1>
+    <p>The Force is not with you. The requested URL was not found on the server.</p>
+    <img src="" alt="Star Wars character" id="character-image">
+    <script>
+      fetch('https://swapi.dev/api/people/')
+        .then(response => response.json())
+        .then(data => {
+          const randomIndex = Math.floor(Math.random() * data.count);
+          const character = data.results[randomIndex];
+          document.getElementById('character-image').src = `https://starwars-visualguide.com/assets/img/characters/${randomIndex + 1}.jpg`;
+          document.getElementById('character-image').alt = character.name;
+        })
+        .catch(error => console.error(error));
+    </script>
+  </body>
+</html>
