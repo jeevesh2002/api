@@ -29,43 +29,6 @@ def resume():
         return send_file('static/resume.pdf', as_attachment=True)
     
 
-@app.route('/personal-info')
-def personal_info():
-    with open('static/personal-info.json') as f:
-        data = json.load(f)
-    return jsonify(data)
-
-@app.route('/skills')
-def skills():
-    with open('static/skills.json') as f:
-        data = json.load(f)
-    return jsonify(data)
-
-
-@app.route('/contact')
-def contact():
-    with open('static/contact.json') as f:
-        data = json.load(f)
-    return jsonify(data)
-
-@app.route('/education')
-def education():
-    with open('static/education.json') as f:
-        data = json.load(f)
-    return jsonify(data)
-
-@app.route('/experience')
-def experience():
-    with open('static/experience.json') as f:
-        data = json.load(f)
-    return jsonify(data)
-
-@app.route('/profiles')
-def profiles():
-    with open('static/profiles.json') as f:
-        data = json.load(f)
-    return jsonify(data)
-
 
 # serve the static.courses.json file
 @app.route('/courses')
