@@ -2,7 +2,7 @@ aniso8601==8.0.0
 certifi==2023.5.7
 charset-normalizer==3.1.0
 click==7.1.2
-Flask==1.1.2
+Flask==2.2.5
 Flask-RESTful==0.3.8
 Flask-SQLAlchemy==2.4.3
 idna==3.4
