@@ -80,6 +80,12 @@ def technologies():
         data = json.load(f)
     return jsonify(data)
 
+@app.route('/awards')
+def awards():
+    with open('static/awards.json') as f:
+        data = json.load(f)
+    return jsonify(data)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
