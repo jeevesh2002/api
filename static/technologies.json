@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Frameworks and Technologies",
+        "tech": ["Qiskit","QuTech","Cirq","PyQuil","tensorflow","scikit-learn","pandas","numpy","django","flask","react","express","node","aws"]
+    },
+    {
+        "title": "Languages",
+        "tech": ["OpenQasm","Q#","python","javascript","c","bash","java","html","css"]
+    },
+    {
+        "title": "Databases and Tools",
+        "tech": ["mongodb","mysql", "oracle","postman","heroku","render","netlify","firebase", "docker","linux","vim","vscode","jupyter","git","github","gitlab"]
+    }
+]

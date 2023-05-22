@@ -74,6 +74,12 @@ def courses():
         data = json.load(f)
     return jsonify(data)
 
+@app.route('/technology')
+def technologies():
+    with open('static/technologies.json') as f:
+        data = json.load(f)
+    return jsonify(data)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
