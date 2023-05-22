@@ -1,7 +1,10 @@
 from flask import Flask, send_file, request, jsonify
 from flask import render_template, url_for
 import json
+from flask_cors import CORS
 app = Flask(__name__)
+CORS(app)
+
 
 
 app = Flask(__name__)
@@ -62,6 +65,15 @@ def profiles():
     with open('static/profiles.json') as f:
         data = json.load(f)
     return jsonify(data)
+
+
+# serve the static.courses.json file
+@app.route('/courses')
+def courses():
+    with open('static/courses.json') as f:
+        data = json.load(f)
+    return jsonify(data)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
