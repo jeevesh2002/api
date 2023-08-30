@@ -29,9 +29,9 @@ def index():
 @app.route('/resume', methods=['GET', 'POST'])
 def resume():
     if request.method == 'POST':
-        return send_file('static/resume.pdf', as_attachment=True)
+        return send_file('static/Jeevesh_Krishna_Arigala_Resume.pdf', as_attachment=True)
     else:
-        return send_file('static/resume.pdf', as_attachment=True)
+        return send_file('static/Jeevesh_Krishna_Arigala_Resume.pdf', as_attachment=True)
     
 
 
